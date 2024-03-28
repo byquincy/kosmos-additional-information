@@ -1,0 +1,105 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+@media screen and (min-width: 650px) {
+    body {
+        margin: 0 8vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        margin: 0 2vw;
+    }
+}
+
+
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+html, body {
+    margin: 0;
+}
+body {
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100vw;
+    height: 2.6rem;
+    padding: .4rem;
+
+    backdrop-filter: saturate(180%) blur(5px);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    z-index: 9999;
+
+
+}
+nav {
+    padding-left: 3vw;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+
+.button {
+    width: min(25rem, 100%);
+}
+button {
+    cursor: pointer;
+
+    border: 0;
+    background-color: transparent;
+
+    padding: 1.6rem 2.4rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+
+    width: 100%;
+    margin: 1rem 0;
+
+    opacity: 0.8;
+}
+button:hover {
+    opacity: 1;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.screen {
+    height: calc(100vh);
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+
+    /* flex-wrap: wrap; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
